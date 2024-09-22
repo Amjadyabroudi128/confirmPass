@@ -10,6 +10,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final TextEditingController pass = TextEditingController();
+  final TextEditingController confirmPass = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
