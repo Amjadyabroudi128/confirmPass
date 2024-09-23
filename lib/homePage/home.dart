@@ -1,3 +1,4 @@
+import 'package:confirm_pass/components/TextField.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -34,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              TextFormField(
+              myTextField(
 
               ),
               SizedBox(height: 10,),
