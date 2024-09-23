@@ -37,10 +37,12 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               myTextField(
                 myController: pass,
+                label: Text("Password"),
               ),
               SizedBox(height: 10,),
               myTextField(
                 myController: confirmPass,
+                label: Text("Confirm Password"),
               ),
             ],
           ),
