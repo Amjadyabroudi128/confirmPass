@@ -5,7 +5,7 @@ class myTextField extends StatelessWidget {
   final bool obscureText;
   final FormFieldValidator<String>? validator;
   final Widget? label;
-  const myTextField({super.key, this.myController, required this.obscureText, this.validator, this.label});
+  const myTextField({super.key, this.myController,  this.obscureText = false, this.validator, this.label});
 
   @override
   Widget build(BuildContext context) {
