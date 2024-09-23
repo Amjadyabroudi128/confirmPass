@@ -36,11 +36,11 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               myTextField(
-
+                myController: pass,
               ),
               SizedBox(height: 10,),
-              TextFormField(
-
+              myTextField(
+                myController: confirmPass,
               ),
             ],
           ),
