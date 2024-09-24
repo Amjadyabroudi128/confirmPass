@@ -18,11 +18,6 @@ class myTextField extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
           borderSide: BorderSide(color: borders)
         ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(width: 1,
-              color: borders), //<-- SEE HERE
-          borderRadius: BorderRadius.circular(18.0),
-        ),
         label: label,
       ),
     );
