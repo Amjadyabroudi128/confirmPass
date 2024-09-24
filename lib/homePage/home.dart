@@ -23,28 +23,36 @@ class _MyHomePageState extends State<MyHomePage> {
   }
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+    return GestureDetector(
+      onTap: (){
+        FocusScope.of(context).requestFocus(FocusNode());
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
 
-        title: Text(widget.title),
-      ),
-      body:  Center(
-        child: Form(
-          key: _formKey,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              myTextField(
-                myController: pass,
-                label: Text("Password"),
+          title: Text(widget.title),
+        ),
+        body:  Center(
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Form(
+              key: _formKey,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  myTextField(
+                    myController: pass,
+                    label: Text("Password"),
+                  ),
+                  SizedBox(height: 20,),
+                  myTextField(
+                    myController: confirmPass,
+                    label: Text("Confirm Password"),
+                  ),
+                ],
               ),
-              SizedBox(height: 10,),
-              myTextField(
-                myController: confirmPass,
-                label: Text("Confirm Password"),
-              ),
-            ],
+            ),
           ),
         ),
       ),
