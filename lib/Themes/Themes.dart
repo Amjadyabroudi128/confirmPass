@@ -7,7 +7,7 @@ class MyTheme {
   static final themes = ThemeData().copyWith(
     inputDecorationTheme: InputDecorationTheme(
       floatingLabelStyle: TextStyle(
-        color: Colors.grey,
+        color: floatingStyle,
         fontSize: 25
       ),
       border: OutlineInputBorder(
