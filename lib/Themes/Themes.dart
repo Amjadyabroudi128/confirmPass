@@ -6,6 +6,10 @@ import '../consts.dart';
 class MyTheme {
   static final themes = ThemeData().copyWith(
     inputDecorationTheme: InputDecorationTheme(
+      floatingLabelStyle: TextStyle(
+        color: Colors.grey,
+        fontSize: 25
+      ),
       border: OutlineInputBorder(
         borderSide: BorderSide(width: 1,color: borders),
         borderRadius: BorderRadius.circular(18.0),
