@@ -1,3 +1,4 @@
+import 'package:confirm_pass/Themes/Themes.dart';
 import 'package:flutter/material.dart';
 
 import 'homePage/home.dart';
@@ -15,8 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-      ),
+      theme: MyTheme.themes,
       home: const MyHomePage(title: 'Confirm Password'),
     );
   }
