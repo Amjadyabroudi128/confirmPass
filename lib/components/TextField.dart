@@ -13,6 +13,10 @@ class myTextField extends StatelessWidget {
       controller: myController,
       obscureText: obscureText,
       decoration: InputDecoration(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(15),
+          borderSide: BorderSide(color: Colors.black)
+        ),
         label: label,
       ),
     );
