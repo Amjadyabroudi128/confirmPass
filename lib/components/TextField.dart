@@ -1,3 +1,4 @@
+import 'package:confirm_pass/consts.dart';
 import 'package:flutter/material.dart';
 
 class myTextField extends StatelessWidget {
@@ -15,11 +16,11 @@ class myTextField extends StatelessWidget {
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(color: Colors.black)
+          borderSide: BorderSide(color: borders)
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(width: 1,
-              color: Colors.black), //<-- SEE HERE
+              color: borders), //<-- SEE HERE
           borderRadius: BorderRadius.circular(18.0),
         ),
         label: label,
