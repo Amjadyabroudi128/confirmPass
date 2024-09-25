@@ -44,6 +44,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   myTextField(
                     myController: pass,
                     label: Text("Password"),
+                    validator: (value){
+                      if ( value == null || pass.text.isEmpty) {
+                        return "enter a password please";
+                      }
+                      return null;
+                    },
                   ),
                   SizedBox(height: 20,),
                   myTextField(
