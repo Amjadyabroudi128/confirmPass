@@ -54,6 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       if (value != pass.text) {
                         return "passwords do not match";
                       }
+                      return null;
                     },
                   ),
                 ],
