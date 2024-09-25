@@ -15,6 +15,7 @@ class confirmingPass extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return myTextField(
+      obscureText: true,
       myController: confirmPass,
       label: Text("Confirm Password"),
       validator: (value){

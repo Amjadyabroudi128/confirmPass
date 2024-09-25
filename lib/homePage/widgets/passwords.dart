@@ -13,6 +13,7 @@ class password extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return myTextField(
+      obscureText: true,
       myController: pass,
       label: Text("Password"),
       validator: (value){
