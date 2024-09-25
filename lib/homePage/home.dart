@@ -1,4 +1,5 @@
 import 'package:confirm_pass/components/TextField.dart';
+import 'package:confirm_pass/homePage/widgets/passwords.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -41,16 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  myTextField(
-                    myController: pass,
-                    label: Text("Password"),
-                    validator: (value){
-                      if ( value == null || pass.text.isEmpty) {
-                        return "enter a password please";
-                      }
-                      return null;
-                    },
-                  ),
+                  password(pass: pass),
                   SizedBox(height: 20,),
                   myTextField(
                     myController: confirmPass,
