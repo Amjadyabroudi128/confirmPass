@@ -1,4 +1,4 @@
-import 'package:confirm_pass/components/TextField.dart';
+import 'package:confirm_pass/homePage/widgets/confirmingPass.dart';
 import 'package:confirm_pass/homePage/widgets/passwords.dart';
 import 'package:flutter/material.dart';
 
@@ -44,19 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   password(pass: pass),
                   SizedBox(height: 20,),
-                  myTextField(
-                    myController: confirmPass,
-                    label: Text("Confirm Password"),
-                    validator: (value){
-                      if(value == null ){
-                        return "nothing to match yet";
-                      }
-                      if (value != pass.text) {
-                        return "passwords do not match";
-                      }
-                      return null;
-                    },
-                  ),
+                  confirmingPass(confirmPass: confirmPass, pass: pass),
                 ],
               ),
             ),
