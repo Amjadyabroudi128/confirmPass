@@ -24,7 +24,16 @@ class _passwordState extends State<password> {
   @override
   Widget build(BuildContext context) {
     return myTextField(
-      obscureText: true,
+      obscureText: isHidden,
+      suffix: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: IconButton(onPressed: (){
+          setState(() {
+            _togglePasswordView();
+          });
+        }, icon: isHidden ? Text("show") : Text("hide")
+        ),
+      ),
       myController: widget.pass,
       label: Text("Password"),
       validator: (value){
