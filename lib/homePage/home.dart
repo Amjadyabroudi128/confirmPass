@@ -47,6 +47,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   myTextField(
                     myController: confirmPass,
                     label: Text("Confirm Password"),
+                    validator: (value){
+                      if(value == null ){
+                        return "nothing to match yet";
+                      }
+                      if (value != pass.text) {
+                        return "passwords do not match";
+                      }
+                    },
                   ),
                 ],
               ),
