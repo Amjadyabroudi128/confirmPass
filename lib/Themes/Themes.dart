@@ -19,7 +19,10 @@ class MyTheme {
       focusedBorder: _border,
       errorBorder: OutlineInputBorder(
         borderSide: BorderSide(color: Colors.red, width: 2)
-      )
+      ),
+      focusedErrorBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.red, width: 2)
+      ),
     )
   );
  }
