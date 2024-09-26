@@ -24,6 +24,7 @@ class _passwordState extends State<password> {
   }
   @override
   Widget build(BuildContext context) {
+    String pass = "Password";
     return myTextField(
       obscureText: isHidden,
       suffix: Padding(
@@ -36,7 +37,7 @@ class _passwordState extends State<password> {
         ),
       ),
       myController: widget.pass,
-      label: Text("Password"),
+      label: Text(pass),
       validator: (value){
         if ( value == null || widget.pass.text.isEmpty) {
           return empty;
