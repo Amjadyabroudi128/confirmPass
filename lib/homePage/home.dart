@@ -45,6 +45,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   password(pass: pass),
                   SizedBox(height: 20,),
                   confirmingPass(confirmPass: confirmPass, pass: pass),
+                  SizedBox(height: 19,),
+                  ElevatedButton(
+                    onPressed: (){
+                      // if (_formKey.currentState!.validate()) {
+                      //   ScaffoldMessenger.of(context).showSnackBar(
+                      //     SnackBar(content: Text('Password is valid')),
+                      //   );
+                      // }
+                    },
+                    child: Text("Submit"),
+                  )
                 ],
               ),
             ),
