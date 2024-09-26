@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         );
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Passwords is valid')),
+                          SnackBar(content: Text('Password is valid')),
                         );
                       }
                     },
