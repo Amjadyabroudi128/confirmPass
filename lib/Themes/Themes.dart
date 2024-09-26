@@ -16,7 +16,10 @@ class MyTheme {
         fontSize: 25
       ),
       border: _border,
-      focusedBorder: _border
+      focusedBorder: _border,
+      errorBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: Colors.red, width: 2)
+      )
     )
   );
  }
