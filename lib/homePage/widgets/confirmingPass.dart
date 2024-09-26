@@ -14,10 +14,11 @@ class confirmingPass extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String confirm = "Confirm Password";
     return myTextField(
       obscureText: true,
       myController: confirmPass,
-      label: Text("Confirm Password"),
+      label: Text(confirm),
       validator: (value){
         if(value == null ){
           return "nothing to match yet";
