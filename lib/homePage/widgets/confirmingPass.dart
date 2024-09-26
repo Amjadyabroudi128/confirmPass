@@ -1,3 +1,4 @@
+import 'package:confirm_pass/consts.dart';
 import 'package:flutter/material.dart';
 
 import '../../components/TextField.dart';
@@ -24,7 +25,7 @@ class confirmingPass extends StatelessWidget {
           return "nothing to match yet";
         }
         if (value != pass.text) {
-          return "passwords do not match";
+          return notMatching;
         }
         return null;
       },
