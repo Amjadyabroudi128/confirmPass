@@ -57,6 +57,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           SnackBar(content: Text('Password is valid')),
                         );
                       }
+                      setState(() {
+
+                      });
                     },
                     child: Text("Submit"),
                   )
