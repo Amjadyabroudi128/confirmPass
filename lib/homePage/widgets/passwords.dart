@@ -1,3 +1,4 @@
+import 'package:confirm_pass/consts.dart';
 import 'package:flutter/material.dart';
 
 import '../../components/TextField.dart';
@@ -38,7 +39,7 @@ class _passwordState extends State<password> {
       label: Text("Password"),
       validator: (value){
         if ( value == null || widget.pass.text.isEmpty) {
-          return "enter a password please";
+          return empty;
         }
         return null;
       },
