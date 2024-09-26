@@ -9,6 +9,9 @@ class MyTheme {
     borderSide: BorderSide(width: 1,color: borders),
     borderRadius: BorderRadius.circular(18.0),
   );
+  static final InputBorder error = OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.red, width: 2)
+  );
   static final themes = ThemeData().copyWith(
     inputDecorationTheme: InputDecorationTheme(
       floatingLabelStyle: TextStyle(
@@ -17,12 +20,8 @@ class MyTheme {
       ),
       border: _border,
       focusedBorder: _border,
-      errorBorder: OutlineInputBorder(
-        borderSide: BorderSide(color: Colors.red, width: 2)
-      ),
-      focusedErrorBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.red, width: 2)
-      ),
+      errorBorder: error,
+      focusedErrorBorder: error
     )
   );
  }
