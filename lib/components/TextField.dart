@@ -4,7 +4,7 @@ class myTextField extends StatelessWidget {
   final TextEditingController? myController;
   final bool obscureText;
   final FormFieldValidator<String>? validator;
-  final Widget? label;
+  final String? label; // Changed to String
   final Widget? suffix;
   const myTextField({super.key, this.myController,  this.obscureText = false, this.validator, this.label, this.suffix});
 
@@ -15,8 +15,9 @@ class myTextField extends StatelessWidget {
       obscureText: obscureText,
       decoration: InputDecoration(
         suffixIcon: suffix,
-        label: label,
+        labelText: label
       ),
+      validator: validator,
     );
   }
 }
