@@ -1,10 +1,8 @@
-import 'package:confirm_pass/consts.dart';
 import 'package:flutter/material.dart';
-
 import '../../components/TextField.dart';
 
-class confirmingPass extends StatelessWidget {
-  const confirmingPass({
+class ConfirmingPass extends StatelessWidget {
+  const ConfirmingPass({
     super.key,
     required this.confirmPass,
     required this.pass,
@@ -16,18 +14,21 @@ class confirmingPass extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String confirm = "Confirm Password";
-    return myTextField(
+
+    return TextFormField(
       obscureText: true,
-      myController: confirmPass,
-      label: Text(confirm),
-      validator: (value){
-        if(value == null ){
-          return "nothing to match yet";
+      controller: confirmPass,
+      decoration: InputDecoration(
+        labelText: confirm
+      ),
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return 'Please confirm your password'; // Validates if the confirm password field is empty
         }
         if (value != pass.text) {
-          return notMatching;
+          return 'Passwords do not match'; // Validates if the passwords match
         }
-        return null;
+        return null; // Passwords match
       },
     );
   }
