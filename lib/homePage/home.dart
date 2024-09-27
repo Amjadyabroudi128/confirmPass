@@ -22,19 +22,19 @@ class _MyHomePageState extends State<MyHomePage> {
     confirmPass.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         FocusScope.of(context).requestFocus(FocusNode());
       },
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-
           title: Text(widget.title),
         ),
-        body:  Center(
+        body: Center(
           child: Padding(
             padding: const EdgeInsets.all(12.0),
             child: Form(
@@ -42,27 +42,24 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  password(pass: pass),
-                  SizedBox(height: 20,),
-                  confirmingPass(confirmPass: confirmPass, pass: pass),
-                  SizedBox(height: 19,),
+                  Password(pass: pass),
+                  SizedBox(height: 20),
+                  ConfirmingPass(confirmPass: confirmPass, pass: pass),
+                  SizedBox(height: 19),
                   ElevatedButton(
-                    onPressed: (){
-                      if (pass.text != confirmPass.text) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Passwords do not match')),
-                        );
-                      } else {
+                    onPressed: () {
+                      if (_formKey.currentState!.validate()) {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(content: Text('Password is valid')),
                         );
+                      } else if (confirmPass.text != pass.text) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text('Passwords do not match')),
+                        );
                       }
-                      setState(() {
-
-                      });
                     },
                     child: Text("Submit"),
-                  )
+                  ),
                 ],
               ),
             ),
