@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 import '../consts.dart';
 
 class MyTheme {
-  static final InputBorder _border = OutlineInputBorder(
+  static final _border = OutlineInputBorder(
     borderSide: BorderSide(width: 1,color: borders),
     borderRadius: BorderRadius.circular(18.0),
   );
-  static final InputBorder error = OutlineInputBorder(
-      borderSide: BorderSide(color: Colors.red, width: 2)
+  static final _error = OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.red, width: 2),
   );
   static final themes = ThemeData().copyWith(
     inputDecorationTheme: InputDecorationTheme(
@@ -20,8 +20,9 @@ class MyTheme {
       ),
       border: _border,
       focusedBorder: _border,
-      errorBorder: error,
-      focusedErrorBorder: error
+      errorBorder: _error,
+      focusedErrorBorder: _error,
+      enabledBorder: _border
     )
   );
  }
