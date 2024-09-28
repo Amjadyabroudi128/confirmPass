@@ -18,10 +18,7 @@ class MyTheme {
   );
   static final themes = ThemeData().copyWith(
     inputDecorationTheme: InputDecorationTheme(
-      floatingLabelStyle: TextStyle(
-        color: floatingStyle,
-        fontSize: 25
-      ),
+      floatingLabelStyle: floatingLable,
       border: _border,
       focusedBorder: _border,
       errorBorder: _error ,

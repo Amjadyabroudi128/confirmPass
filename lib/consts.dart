@@ -9,3 +9,9 @@ Color errorColor = Colors.red;
 // validate
  String empty = "enter a password please";
  String notMatching = "passwords do not match";
+
+ //TextStyles
+TextStyle floatingLable = TextStyle(
+    color: floatingStyle,
+    fontSize: 25
+);
