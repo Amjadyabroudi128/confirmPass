@@ -13,7 +13,7 @@ class MyTheme {
     borderRadius: myBorder
   );
   static final OutlineInputBorder _error = OutlineInputBorder(
-      borderSide: BorderSide(color: Colors.red, width: 2),
+      borderSide: BorderSide(color: errorColor, width: 2),
     borderRadius: myBorder
   );
   static final themes = ThemeData().copyWith(
