@@ -36,13 +36,10 @@ class _PasswordState extends State<Password> {
         ),
       ),
       myController: widget.pass,
-      label: labelText, // Label for password
+      label: labelText,
       validator: (value) {
-        if (value == null || value.isEmpty) { // Validate the value, not the label
+        if (value == null || value.isEmpty) {
           return 'Please enter password';
-        }
-        if (value.length < 6) {
-          return 'Password must be at least 6 characters long';
         }
         return null; // Valid password
       },
