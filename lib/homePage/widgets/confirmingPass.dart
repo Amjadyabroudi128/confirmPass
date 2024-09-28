@@ -15,18 +15,19 @@ class ConfirmingPass extends StatelessWidget {
   Widget build(BuildContext context) {
     String confirm = "Confirm Password";
 
-    return TextFormField(
+    return myTextField(
       obscureText: true,
-      controller: confirmPass,
-      decoration: InputDecoration(
-        labelText: confirm
-      ),
+      myController: confirmPass,
+      label: confirm,
+      // decoration: InputDecoration(
+      //   labelText: confirm
+      // ),
       validator: (value) {
         if (value == null || value.isEmpty) {
-          return 'Please confirm your password'; // Validates if the confirm password field is empty
+          return 'Please enter a password';
         }
         if (value != pass.text) {
-          return 'Passwords do not match'; // Validates if the passwords match
+          return 'Passwords do not match';
         }
         return null; // Passwords match
       },
