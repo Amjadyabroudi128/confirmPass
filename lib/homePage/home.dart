@@ -50,9 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Password is valid')),
-                        );
+                        showSnackbar(context, "password is Valid");
                       } else if (confirmPass.text != pass.text) {
                         showSnackbar(context, "Passwords do not match");
                       }
