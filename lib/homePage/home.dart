@@ -1,3 +1,4 @@
+import 'package:confirm_pass/components/snackBart.dart';
 import 'package:confirm_pass/homePage/widgets/confirmingPass.dart';
 import 'package:confirm_pass/homePage/widgets/passwords.dart';
 import 'package:flutter/material.dart';
@@ -53,9 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           SnackBar(content: Text('Password is valid')),
                         );
                       } else if (confirmPass.text != pass.text) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Passwords do not match')),
-                        );
+                        showSnackbar(context, "Passwords do not match");
                       }
                     },
                     child: Text("Submit"),
