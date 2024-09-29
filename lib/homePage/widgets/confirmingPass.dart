@@ -19,9 +19,6 @@ class ConfirmingPass extends StatelessWidget {
       obscureText: true,
       myController: confirmPass,
       label: confirm,
-      // decoration: InputDecoration(
-      //   labelText: confirm
-      // ),
       validator: (value) {
         if (value == null || value.isEmpty) {
           return 'Please enter a password';
