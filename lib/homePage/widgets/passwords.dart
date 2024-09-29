@@ -25,7 +25,7 @@ class _PasswordState extends State<Password> {
   @override
   Widget build(BuildContext context) {
     String labelText = "Password";
-
+    String enterPass = "please enter Password";
     return myTextField(
       obscureText: isHidden,
       suffix: Padding(
@@ -39,7 +39,7 @@ class _PasswordState extends State<Password> {
       label: labelText,
       validator: (value) {
         if (value == null || value.isEmpty) {
-          return 'Please enter password';
+          return enterPass;
         }
         return null; // Valid password
       },
