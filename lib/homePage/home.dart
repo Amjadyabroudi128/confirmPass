@@ -1,3 +1,4 @@
+import 'package:confirm_pass/components/elevatedBtn.dart';
 import 'package:confirm_pass/components/snackBart.dart';
 import 'package:confirm_pass/homePage/widgets/confirmingPass.dart';
 import 'package:confirm_pass/homePage/widgets/passwords.dart';
@@ -47,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(height: 20),
                   ConfirmingPass(confirmPass: confirmPass, pass: pass),
                   SizedBox(height: 19),
-                  ElevatedButton(
+                  kElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
                         showSnackbar(context, "password is Valid");
