@@ -1,5 +1,4 @@
-import 'package:confirm_pass/components/elevatedBtn.dart';
-import 'package:confirm_pass/components/snackBart.dart';
+
 import 'package:confirm_pass/homePage/widgets/confirmingPass.dart';
 import 'package:confirm_pass/homePage/widgets/passwords.dart';
 import 'package:confirm_pass/homePage/widgets/submitBtn.dart';
