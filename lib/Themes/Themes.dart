@@ -19,6 +19,17 @@ class MyTheme {
       errorBorder: _error ,
       focusedErrorBorder: _error,
       enabledBorder: _border
-    )
+    ),
+   elevatedButtonTheme: ElevatedButtonThemeData(
+       style: ElevatedButton.styleFrom(
+           elevation: 5,
+           backgroundColor: Colors.black,
+           foregroundColor: Colors.white,
+           textStyle: btnStyle,
+           shape: RoundedRectangleBorder(
+               borderRadius: BorderRadius.circular(12)
+           )
+       ),
+   )
   );
  }

@@ -30,15 +30,6 @@ class submitBtn extends StatelessWidget {
           }
         },
         child: Text("Submit"),
-        style: ElevatedButton.styleFrom(
-            elevation: 5,
-            backgroundColor: Colors.black,
-            foregroundColor: Colors.white,
-            textStyle: btnStyle,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12)
-            )
-        ),
       ),
     );
   }
