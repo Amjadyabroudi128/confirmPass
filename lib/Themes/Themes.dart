@@ -23,7 +23,7 @@ class MyTheme {
    elevatedButtonTheme: ElevatedButtonThemeData(
        style: ElevatedButton.styleFrom(
            elevation: 5,
-           backgroundColor: Colors.black,
+           backgroundColor: btnBG,
            foregroundColor: Colors.white,
            textStyle: btnStyle,
            shape: RoundedRectangleBorder(
