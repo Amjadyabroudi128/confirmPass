@@ -1,3 +1,4 @@
+import 'package:confirm_pass/consts.dart';
 import 'package:flutter/material.dart';
 
 import '../../components/elevatedBtn.dart';
@@ -33,9 +34,7 @@ class submitBtn extends StatelessWidget {
             elevation: 5,
             backgroundColor: Colors.black,
             foregroundColor: Colors.white,
-            textStyle: TextStyle(
-                fontSize: 20
-            ),
+            textStyle: btnStyle,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12)
             )

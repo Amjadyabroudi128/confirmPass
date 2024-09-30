@@ -15,3 +15,6 @@ TextStyle floatingLable = TextStyle(
     color: floatingStyle,
     fontSize: 25
 );
+TextStyle btnStyle = TextStyle(
+ fontSize: 20
+);
