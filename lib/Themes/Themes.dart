@@ -24,7 +24,7 @@ class MyTheme {
        style: ElevatedButton.styleFrom(
            elevation: 5,
            backgroundColor: btnBG,
-           foregroundColor: Colors.white,
+           foregroundColor: btnFG,
            textStyle: btnStyle,
            shape: RoundedRectangleBorder(
                borderRadius: BorderRadius.circular(12)

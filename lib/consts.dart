@@ -7,6 +7,7 @@ Color borders = Colors.black;
 Color floatingStyle = Colors.blue;
 Color errorColor = Colors.red;
 Color btnBG = Colors.black;
+Color btnFG = Colors.white;
 // validate
  String empty = "enter a password please";
  String notMatching = "passwords do not match";
