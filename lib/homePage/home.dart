@@ -48,16 +48,29 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(height: 20),
                   ConfirmingPass(confirmPass: confirmPass, pass: pass),
                   SizedBox(height: 19),
-                  kElevatedButton(
-                    onPressed: () {
-                      if (_formKey.currentState!.validate()) {
-                        showSnackbar(context, "password is Valid");
-                      } else if (confirmPass.text != pass.text) {
-                        showSnackbar(context, "Passwords do not match");
-                      }
-                    },
-                    child: Text("Submit"),
-                    style: ElevatedButton.styleFrom(
+                  SizedBox(
+                    height: 40,
+                    width: 130,
+                    child: kElevatedButton(
+                      onPressed: () {
+                        if (_formKey.currentState!.validate()) {
+                          showSnackbar(context, "password is Valid");
+                        } else if (confirmPass.text != pass.text) {
+                          showSnackbar(context, "Passwords do not match");
+                        }
+                      },
+                      child: Text("Submit"),
+                      style: ElevatedButton.styleFrom(
+                        elevation: 5,
+                        backgroundColor: Colors.black,
+                          foregroundColor: Colors.white,
+                          textStyle: TextStyle(
+                            fontSize: 20
+                        ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12)
+                        )
+                      ),
                     ),
                   ),
                 ],
