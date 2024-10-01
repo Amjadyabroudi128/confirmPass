@@ -59,10 +59,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
                 duration: Duration(seconds: 1),
                 builder: (context, value, child) {
                   return Center(
-                    child: FaIcon(
-                      size: 70,
-                      value < 1 ? lockIcon: ,
-                    ),
+                    child: value < 1 ? lockIcon : openLock,
                   );
                 },
               ),
@@ -71,7 +68,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
         },
       );
     } else if (widget.confirmPass.text != widget.pass.text) {
-          showSnackbar(context, "Passwords do not match");
+          showSnackbar(context, "Passwords do not match",);
         }
   }
 
