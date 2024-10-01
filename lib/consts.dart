@@ -21,5 +21,5 @@ TextStyle floatingLable = TextStyle(
 TextStyle btnStyle = TextStyle(
  fontSize: 20
 );
-FaIcon lockIcon = FaIcon(FontAwesomeIcons.lock, size: 70,);
-FaIcon openLock = FaIcon(FontAwesomeIcons.lockOpen, size: 70,);
+FaIcon lockIcon = FaIcon(FontAwesomeIcons.lock,);
+FaIcon openLock = FaIcon(FontAwesomeIcons.lockOpen,);

@@ -30,6 +30,10 @@ class MyTheme {
                borderRadius: BorderRadius.circular(12)
            )
        ),
-   )
+   ),
+    iconTheme: const IconThemeData(
+      size: 70,
+      color: Colors.black
+    )
   );
  }
