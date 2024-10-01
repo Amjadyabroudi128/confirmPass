@@ -15,7 +15,7 @@ class ConfirmingPass extends StatelessWidget {
   Widget build(BuildContext context) {
     String confirm = "Confirm Password";
     String enter = "Please enter a Password";
-    String noMAtch = "Passwords do not match";
+    String noMatch = "Passwords do not match";
     return myTextField(
       obscureText: true,
       myController: confirmPass,
@@ -25,7 +25,7 @@ class ConfirmingPass extends StatelessWidget {
           return enter;
         }
         if (value != pass.text) {
-          return noMAtch;
+          return noMatch;
         }
         return null; // Passwords match
       },
