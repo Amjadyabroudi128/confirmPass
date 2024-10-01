@@ -61,7 +61,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
                   return Center(
                     child: FaIcon(
                       size: 70,
-                      value < 1 ? FontAwesomeIcons.lock : FontAwesomeIcons.lockOpen,
+                      value < 1 ? lockIcon: ,
                     ),
                   );
                 },

@@ -2,6 +2,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // colors
 Color borders = Colors.black;
 Color floatingStyle = Colors.blue;
@@ -20,3 +21,4 @@ TextStyle floatingLable = TextStyle(
 TextStyle btnStyle = TextStyle(
  fontSize: 20
 );
+Icon lockIcon = Icon(FontAwesomeIcons.lock);
