@@ -46,6 +46,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
         builder: (BuildContext context) {
           Future.delayed(Duration(seconds: 3), () {
             Navigator.of(context).pop(true);
+            Navigator.of(context).pushNamed("Welcome");
           });
           return GestureDetector(
             onTap: () {
@@ -69,8 +70,9 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
           );
         },
       );
-
-    }
+    } else if (widget.confirmPass.text != widget.pass.text) {
+          showSnackbar(context, "Passwords do not match");
+        }
   }
 
   @override
