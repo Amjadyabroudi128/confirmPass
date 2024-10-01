@@ -1,4 +1,5 @@
 import 'package:confirm_pass/Themes/Themes.dart';
+import 'package:confirm_pass/welcomeScreen.dart';
 import 'package:flutter/material.dart';
 
 import 'homePage/home.dart';
@@ -18,6 +19,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: MyTheme.themes,
       home: const MyHomePage(title: 'Confirm Password'),
+      routes: {
+        "Welcome": (context) => WelcomeScreen(),
+      },
     );
   }
 }
