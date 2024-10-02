@@ -13,6 +13,8 @@ Color btnFG = Colors.white;
  String notMatching = "passwords do not match";
 String confirm = "Confirm Password";
 String enter = "Please enter a Password";
+String labelText = "Password";
+
 
  //TextStyles
 TextStyle floatingLable = TextStyle(

@@ -25,7 +25,6 @@ class _PasswordState extends State<Password> {
 
   @override
   Widget build(BuildContext context) {
-    String labelText = "Password";
     return myTextField(
       obscureText: isHidden,
       suffix: Padding(
