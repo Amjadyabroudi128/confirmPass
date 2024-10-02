@@ -27,7 +27,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
   void initState() {
     super.initState();
     controller = AnimationController(
-      duration: const Duration(milliseconds: 400), // Animation duration for lock to unlock
+      duration: miliscs, // Animation duration for lock to unlock
       vsync: this,
     );
   }
