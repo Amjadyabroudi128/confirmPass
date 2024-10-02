@@ -26,3 +26,5 @@ TextStyle btnStyle = TextStyle(
 );
 FaIcon lockIcon = FaIcon(FontAwesomeIcons.lock,);
 FaIcon openLock = FaIcon(FontAwesomeIcons.lockOpen,);
+// Duration
+Duration miliscs = Duration(milliseconds: 400);
