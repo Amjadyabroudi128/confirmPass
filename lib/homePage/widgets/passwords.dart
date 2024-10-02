@@ -1,3 +1,4 @@
+import 'package:confirm_pass/consts.dart';
 import 'package:flutter/material.dart';
 import '../../components/TextField.dart';
 
@@ -25,7 +26,6 @@ class _PasswordState extends State<Password> {
   @override
   Widget build(BuildContext context) {
     String labelText = "Password";
-    String enterPass = "please enter Password";
     return myTextField(
       obscureText: isHidden,
       suffix: Padding(
@@ -39,7 +39,7 @@ class _PasswordState extends State<Password> {
       label: labelText,
       validator: (value) {
         if (value == null || value.isEmpty) {
-          return enterPass;
+          return enter;
         }
         return null; // Valid password
       },
