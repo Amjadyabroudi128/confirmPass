@@ -10,8 +10,9 @@ Color errorColor = Colors.red;
 Color btnBG = Colors.black;
 Color btnFG = Colors.white;
 // validate
- String empty = "enter a password please";
  String notMatching = "passwords do not match";
+String confirm = "Confirm Password";
+String enter = "Please enter a Password";
 
  //TextStyles
 TextStyle floatingLable = TextStyle(
