@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../components/TextField.dart';
+import '../../consts.dart';
 
 class ConfirmingPass extends StatelessWidget {
   const ConfirmingPass({
@@ -13,9 +14,6 @@ class ConfirmingPass extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String confirm = "Confirm Password";
-    String enter = "Please enter a Password";
-    String noMatch = "Passwords do not match";
     return myTextField(
       obscureText: true,
       myController: confirmPass,
@@ -25,7 +23,7 @@ class ConfirmingPass extends StatelessWidget {
           return enter;
         }
         if (value != pass.text) {
-          return noMatch;
+          return notMatching;
         }
         return null; // Passwords match
       },
