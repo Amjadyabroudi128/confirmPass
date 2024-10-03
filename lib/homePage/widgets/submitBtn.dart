@@ -81,7 +81,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
       width: 130,
       child: kElevatedButton(
         onPressed: onSubmit,
-        child: Text("Submit"),
+        child: Text(submit),
       ),
     );
   }
