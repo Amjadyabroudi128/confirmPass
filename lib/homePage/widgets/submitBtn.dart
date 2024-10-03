@@ -75,10 +75,11 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
   @override
   Widget build(BuildContext context) {
     double height = 40;
+    double width = 130;
     String submit = "submit";
     return SizedBox(
       height: height,
-      width: 130,
+      width: width,
       child: kElevatedButton(
         onPressed: onSubmit,
         child: Text(submit),
