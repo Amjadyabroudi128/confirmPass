@@ -44,7 +44,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
       showDialog(
         context: context,
         builder: (BuildContext context) {
-          Future.delayed(Duration(seconds: 3), () {
+          Future.delayed(seconds3, () {
             Navigator.of(context).pop(true);
             Navigator.of(context).pushNamed("Welcome");
           });

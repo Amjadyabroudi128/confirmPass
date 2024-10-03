@@ -29,3 +29,4 @@ FaIcon openLock = FaIcon(FontAwesomeIcons.lockOpen,);
 // Duration
 Duration miliscs = Duration(milliseconds: 400);
 const seconds1 = Duration(seconds: 1);
+Duration seconds3 = Duration(seconds: 3);
