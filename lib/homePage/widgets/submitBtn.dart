@@ -56,7 +56,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
               backgroundColor: Colors.transparent,
               content: TweenAnimationBuilder(
                 tween: Tween(begin: 0.0, end: 1.0),
-                duration: Duration(seconds: 1),
+                duration: seconds1,
                 builder: (context, value, child) {
                   return Center(
                     child: value < 1 ? lockIcon : openLock,
