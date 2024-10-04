@@ -28,7 +28,7 @@ class _PasswordState extends State<Password> {
     return myTextField(
       obscureText: isHidden,
       suffix: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.only(right: 8),
         child: IconButton(
           onPressed: _togglePasswordView,
           icon: isHidden ? Text("show") : Text("hide"),
