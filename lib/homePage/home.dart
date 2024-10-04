@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Password(pass: pass),
-                  SizedBox(height: 20),
+                  SizedBox(height: MediaQuery.of(context).size.height / 42),
                   ConfirmingPass(confirmPass: confirmPass, pass: pass),
                   SizedBox(height: 22),
                   submitBtn(formKey: _formKey, confirmPass: confirmPass, pass: pass),
