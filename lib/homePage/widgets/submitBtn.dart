@@ -1,3 +1,4 @@
+import 'package:confirm_pass/components/unfocus.dart';
 import 'package:confirm_pass/consts.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -49,9 +50,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
             Navigator.of(context).pushNamed("Welcome");
           });
           return GestureDetector(
-            onTap: () {
-              FocusScope.of(context).requestFocus(FocusNode());
-            },
+            onTap: () => unFocus(context),
             child: AlertDialog(
               backgroundColor: Colors.transparent,
               content: TweenAnimationBuilder(
