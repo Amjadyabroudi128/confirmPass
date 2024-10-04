@@ -1,4 +1,5 @@
 
+import 'package:confirm_pass/components/unfocus.dart';
 import 'package:confirm_pass/homePage/widgets/confirmingPass.dart';
 import 'package:confirm_pass/homePage/widgets/passwords.dart';
 import 'package:confirm_pass/homePage/widgets/submitBtn.dart';
@@ -28,9 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        FocusScope.of(context).requestFocus(FocusNode());
-      },
+      onTap: () => unFocus(context),
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
