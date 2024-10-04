@@ -74,7 +74,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height * 0.053;
-    double width = 130;
+    double width = MediaQuery.of(context).size.width * 0.33;
     String submit = "submit";
     return SizedBox(
       height: height,
