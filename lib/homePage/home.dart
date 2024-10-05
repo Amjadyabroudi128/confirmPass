@@ -31,10 +31,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return GestureDetector(
       onTap: () => unFocus(context),
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: Text(widget.title),
-        ),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(12.0),
