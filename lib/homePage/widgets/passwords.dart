@@ -5,12 +5,11 @@ import '../../components/TextField.dart';
 class Password extends StatefulWidget {
   const Password({
     super.key,
-    required this.pass, this.confirmPass,
+    required this.pass,
 
   });
 
   final TextEditingController pass;
-  final TextEditingController? confirmPass;
   @override
   State<Password> createState() => _PasswordState();
 }
