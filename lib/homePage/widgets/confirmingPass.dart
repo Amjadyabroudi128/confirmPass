@@ -44,7 +44,7 @@ class _ConfirmingPassState extends State<ConfirmingPass> {
         child: passwordsMatch()
             ? corrected
         : IconButton(
-          icon: Icon(Icons.clear),
+          icon: clear,
           onPressed: (){
             widget.confirmPass.clear();
           },
