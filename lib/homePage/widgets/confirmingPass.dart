@@ -42,7 +42,7 @@ class _ConfirmingPassState extends State<ConfirmingPass> {
       suffix: Padding(
         padding: const EdgeInsets.only(right: 8),
         child: passwordsMatch()
-            ? correct
+            ? corrected
         : IconButton(
           icon: Icon(Icons.clear),
           onPressed: (){
