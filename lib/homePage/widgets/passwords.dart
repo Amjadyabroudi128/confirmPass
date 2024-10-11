@@ -42,7 +42,7 @@ class _PasswordState extends State<Password> {
           onPressed: _togglePasswordView,
           icon: isHidden ? const Text("show") : const Text("hide"),
         ) : IconButton(
-          icon: const Icon(Icons.clear),
+          icon: clear,
           onPressed: () {
             widget.pass.clear(); // Clear the text when pressed
           },
