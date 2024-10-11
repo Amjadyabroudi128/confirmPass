@@ -42,8 +42,8 @@ class _ConfirmingPassState extends State<ConfirmingPass> {
       suffix: Padding(
         padding: const EdgeInsets.only(right: 8),
         child: passwordsMatch()
-            ? const Icon(Icons.check, color: Colors.green) // Show tick icon
-            : const Icon(Icons.clear, color: Colors.red), // Show clear icon
+            ? const Icon(Icons.check,) // Show tick icon
+            : const Icon(Icons.clear, ), // Show clear icon
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
