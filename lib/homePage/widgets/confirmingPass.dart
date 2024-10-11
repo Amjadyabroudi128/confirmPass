@@ -43,7 +43,13 @@ class _ConfirmingPassState extends State<ConfirmingPass> {
         padding: const EdgeInsets.only(right: 8),
         child: passwordsMatch()
             ? const Icon(Icons.check,) // Show tick icon
-            : const Icon(Icons.clear, ), // Show clear icon
+        : IconButton(
+          icon: Icon(Icons.clear),
+          onPressed: (){
+            widget.confirmPass.clear();
+          },
+        )
+            // : const Icon(Icons.clear, ), // Show clear icon
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
