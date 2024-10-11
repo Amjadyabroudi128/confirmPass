@@ -42,7 +42,7 @@ class _ConfirmingPassState extends State<ConfirmingPass> {
       suffix: Padding(
         padding: const EdgeInsets.only(right: 8),
         child: passwordsMatch()
-            ? const Icon(Icons.check,) // Show tick icon
+            ? correct
         : IconButton(
           icon: Icon(Icons.clear),
           onPressed: (){
