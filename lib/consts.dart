@@ -16,6 +16,7 @@ String enter = "Please enter a Password";
 String labelText = "Password";
 // Icons
 Icon corrected = Icon(Icons.check);
+Icon clear = Icon(Icons.clear);
 
  //TextStyles
 TextStyle floatingLable = TextStyle(
