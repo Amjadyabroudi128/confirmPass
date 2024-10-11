@@ -24,14 +24,28 @@ class _PasswordState extends State<Password> {
   }
 
   @override
+  void initState() {
+    super.initState();
+    widget.pass.addListener(() {
+      setState(() {});
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return myTextField(
       obscureText: isHidden,
       suffix: Padding(
         padding: const EdgeInsets.only(right: 8),
-        child: IconButton(
+        child: widget.pass.text.isEmpty
+            ? IconButton(
           onPressed: _togglePasswordView,
-          icon: isHidden ? Text("show") : Text("hide"),
+          icon: isHidden ? const Text("show") : const Text("hide"),
+        ) : IconButton(
+          icon: const Icon(Icons.clear),
+          onPressed: () {
+            widget.pass.clear(); // Clear the text when pressed
+          },
         ),
       ),
       myController: widget.pass,
