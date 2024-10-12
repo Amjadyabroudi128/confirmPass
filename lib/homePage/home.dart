@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Password(pass: pass),
                   SizedBox(height: MediaQuery.of(context).size.height / 42),
                   ConfirmingPass(confirmPass: confirmPass, pass: pass),
-                  SizedBox(height: 22),
+                  SizedBox(height: MediaQuery.of(context).size.height / 30),
                   submitBtn(formKey: _formKey, confirmPass: confirmPass, pass: pass),
                 ],
               ),
