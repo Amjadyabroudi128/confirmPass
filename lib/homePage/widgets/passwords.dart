@@ -44,7 +44,7 @@ class _PasswordState extends State<Password> {
         ) : IconButton(
           icon: clear,
           onPressed: () {
-            widget.pass.clear(); // Clear the text when pressed
+            clearPass();
           },
         ),
       ),
@@ -57,5 +57,8 @@ class _PasswordState extends State<Password> {
         return null; // Valid password
       },
     );
+  }
+  void clearPass() {
+    widget.pass.clear();
   }
 }
