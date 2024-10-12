@@ -49,7 +49,6 @@ class _ConfirmingPassState extends State<ConfirmingPass> {
             clearConfirm();
           },
         )
-
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
