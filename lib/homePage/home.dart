@@ -1,5 +1,6 @@
 
 import 'package:confirm_pass/components/unfocus.dart';
+import 'package:confirm_pass/consts.dart';
 import 'package:confirm_pass/homePage/widgets/confirmingPass.dart';
 import 'package:confirm_pass/homePage/widgets/passwords.dart';
 import 'package:confirm_pass/homePage/widgets/submitBtn.dart';
@@ -42,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Password(pass: pass),
                   SizedBox(height: MediaQuery.of(context).size.height / 42),
                   ConfirmingPass(confirmPass: confirmPass, pass: pass),
-                  SizedBox(height: MediaQuery.of(context).size.height / 30),
+                  myBox30(context),
                   submitBtn(formKey: _formKey, confirmPass: confirmPass, pass: pass),
                 ],
               ),
