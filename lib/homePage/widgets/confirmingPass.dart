@@ -46,10 +46,10 @@ class _ConfirmingPassState extends State<ConfirmingPass> {
         : IconButton(
           icon: clear,
           onPressed: (){
-            widget.confirmPass.clear();
+            clearConfirm();
           },
         )
-            // : const Icon(Icons.clear, ), // Show clear icon
+
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
@@ -61,5 +61,8 @@ class _ConfirmingPassState extends State<ConfirmingPass> {
         return null; // Passwords match
       },
     );
+  }
+  void clearConfirm() {
+    widget.confirmPass.clear();
   }
 }
