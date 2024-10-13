@@ -14,6 +14,7 @@ Color btnFG = Colors.white;
 String confirm = "Confirm Password";
 String enter = "Please enter a Password";
 String labelText = "Password";
+String valid = "pass is Valid";
 // Icons
 Icon corrected = Icon(Icons.check);
 Icon clear = Icon(Icons.clear);
