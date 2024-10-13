@@ -34,5 +34,4 @@ const seconds1 = Duration(seconds: 1);
 Duration seconds3 = Duration(seconds: 3);
 SizedBox myBox30(context) {
  return SizedBox(height: MediaQuery.of(context).size.height / 30);
-
 }

@@ -67,7 +67,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
         },
       );
     } else if (widget.confirmPass.text != widget.pass.text) {
-          showSnackbar(context, "Passwords do not match",);
+          showSnackbar(context, notMatching,);
         }
   }
 
