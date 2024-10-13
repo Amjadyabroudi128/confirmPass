@@ -1,8 +1,7 @@
 import 'package:confirm_pass/components/unfocus.dart';
 import 'package:confirm_pass/consts.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
+import '../../Navigation.dart';
 import '../../components/elevatedBtn.dart';
 import '../../components/snackBart.dart';
 
@@ -47,7 +46,8 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
         builder: (BuildContext context) {
           Future.delayed(seconds3, () {
             Navigator.of(context).pop(true);
-            Navigator.of(context).pushNamed("Welcome");
+            Navigate.welcome(context);
+            // Navigator.of(context).pushNamed("Welcome");
           });
           return GestureDetector(
             onTap: () => unFocus(context),
