@@ -53,7 +53,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
             child: AlertDialog(
               backgroundColor: Colors.transparent,
               content: TweenAnimationBuilder(
-                tween: Tween(begin: 0.0, end: 1.0),
+                tween: Tween(begin: tween0, end: 1.0),
                 duration: seconds1,
                 builder: (context, value, child) {
                   return Center(
