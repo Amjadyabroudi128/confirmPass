@@ -57,7 +57,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
                 duration: seconds1,
                 builder: (context, value, child) {
                   return Center(
-                    child: value < 1 ? lockIcon : openLock,
+                    child: value != 1 ? lockIcon : openLock,
                   );
                 },
               ),
