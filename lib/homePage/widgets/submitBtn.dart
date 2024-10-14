@@ -40,6 +40,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
 
   void onSubmit() {
     var validate = widget._formKey.currentState!.validate();
+   final noMatch =  widget.confirmPass.text != widget.pass.text ;
     if (validate) {
       showSnackbar(context, valid);
       showDialog(
@@ -66,7 +67,7 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
           );
         },
       );
-    } else if (widget.confirmPass.text != widget.pass.text) {
+    } else if (noMatch) {
           showSnackbar(context, notMatching,);
         }
   }
