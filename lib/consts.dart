@@ -37,3 +37,4 @@ SizedBox myBox30(context) {
  return SizedBox(height: MediaQuery.of(context).size.height / 30);
 }
 double tween0 = 0.0;
+Tween myAnimation = Tween(begin: 0.0, end: 1.0);
