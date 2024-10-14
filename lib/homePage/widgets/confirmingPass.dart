@@ -20,7 +20,6 @@ class _ConfirmingPassState extends State<ConfirmingPass> {
   @override
   void initState() {
     super.initState();
-    // Listen for changes in both password fields to update UI accordingly
     widget.pass.addListener(() {
       setState(() {});
     });
