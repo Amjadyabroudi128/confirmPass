@@ -36,3 +36,4 @@ Duration seconds3 = Duration(seconds: 3);
 SizedBox myBox30(context) {
  return SizedBox(height: MediaQuery.of(context).size.height / 30);
 }
+double tween0 = 0.0;
