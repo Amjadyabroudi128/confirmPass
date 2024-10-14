@@ -15,6 +15,7 @@ String confirm = "Confirm Password";
 String enter = "Please enter a Password";
 String labelText = "Password";
 String valid = "pass is Valid";
+String submit = "submit";
 // Icons
 Icon corrected = Icon(Icons.check);
 Icon clear = Icon(Icons.clear);
