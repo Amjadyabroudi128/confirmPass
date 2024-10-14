@@ -47,7 +47,6 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
           Future.delayed(seconds3, () {
             Navigate.pop(context);
             Navigate.welcome(context);
-            // Navigator.of(context).pushNamed("Welcome");
           });
           return GestureDetector(
             onTap: () => unFocus(context),
