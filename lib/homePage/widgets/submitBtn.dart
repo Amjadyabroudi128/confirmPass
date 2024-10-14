@@ -39,7 +39,8 @@ class _submitBtnState extends State<submitBtn> with SingleTickerProviderStateMix
   }
 
   void onSubmit() {
-    if (widget._formKey.currentState!.validate()) {
+    var validate = widget._formKey.currentState!.validate();
+    if (validate) {
       showSnackbar(context, valid);
       showDialog(
         context: context,
